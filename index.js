@@ -7,8 +7,8 @@ app.get("/", function (req, res) {
     return res.send("Ok");
 });
 app.get("/teste", function (req, res) {
-    return res.send().json({
-        message: "Hellou Word!"
+    return res.status(200).json({
+        message: "Alteração no codigo de Teste"
     });
 });
 app.listen(3030, function () { return console.log("Server is init..."); });
