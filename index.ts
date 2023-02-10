@@ -16,4 +16,9 @@ app.get("/newcontent", (req, res) => {
     message: "Testanto auto Pull",
   });
 });
+app.get("/new", (req, res) => {
+  return res.status(200).json({
+    message: "Novo Conteudo!",
+  });
+});
 app.listen(3030, () => console.log("Server is init..."));
